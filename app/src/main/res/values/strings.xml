@@ -22,4 +22,40 @@
     <string name="image_view_item_transform_content_description">Represents an image view in the
         item
     </string>
+    <string name="introduction">Introduction</string>
+    <string name="introduction_paragraph">
+        The Dala\'il Al Khayrat (also known as Dalailul Khairat, دلائل الخيرات) is a compilation of salawat,
+        or sending of blessings and peace upon the Prophet ﷺ. The extended title of the book is Dala’il Al Khayrat
+        wa Shawariq Al-Anwar fi Dhikr al-Salat ‘ala al-Nabi al-Mukhtar ﷺ (The Guide to Goodness and the Advent of
+        Blazing Lights in the Remembrance to ask for Blessings upon the Chosen Prophet ﷺ).
+
+        Soon after it was written, the Dala\'il al Khayrat swept across the Islamic World, from North Africa to
+        Indonesia. All well-to-do homes had one; princes exchanged magnificently embellished copies of it and
+        commoners treasured it. Everyone who read it found that barakah descended wherever it was recited, in
+        accordance with the Divine command: Verily Allah and His angels bless the Prophet ﷺ: O you who believe,
+        bless him and grant him peace (Qur’an 33:56).
+
+        Millions of Muslims from East to West recite it, alone and in groups, in homes and mosques, utterly spending
+        themselves in the Blessings on the Most Beloved.
+    </string>
+    <string name="story">The Story of Dala\'il Al Khayrat</string>
+    <string name="story_paragraph">"It is related that one day the author, Imam al Jazuli, went to perform his ablutions
+        at a nearby well but could not find any means to draw the water up. A young girl saw him and called out, ”You’re
+        the one people praise so much, and you can’t even figure out how to get water out of a well?“  So she came to the
+        well and spat into the water, which welled up until it overflowed and spilled across the ground. Imam al Jazuli
+        made his ablutions, and then turned to her and said, ”Tell me how you reached this rank.“ She said, ”By saying the
+        Blessings upon him ﷺ whom ﷺ beasts lovingly followed as he walked through the wilds (Allah bless him and give him peace).“
+        Imam al Jazuli then vowed to compose the book of Blessings on the Prophet ﷺ (Allah bless him and give him peace) which
+        came to be known as his Dala’il al Khayrat or 'Waymarks of Benefits.' "
+    </string>
+    <string name="author">The Author</string>
+    <string name="author_paragraph">The author is the Sufi, Wali, Muslim scholar of prophetic descent, Muhammad ibn Sulayman
+        al-Jazuli. Born in the 9th Hijri century, he was raised among the Gazulah Berbers of the Sus region in southern Morocco.
+        After studying the Qur’an and gaining traditional Islamic knowledge, he travelled to Fez where he met scholars of his time
+        such as Ahmad Zarruq, and Muhammad ibn ‘Abdullah Amghar, who became his sheikh in the tariqa or Sufi path.  His spiritual
+        path drew thousands of disciples who, aided by the popularity of his manual of Blessings on the Prophet ﷺ (Allah bless him and
+        give him peace), had a tremendous effect on Moroccan society. He taught followers the Blessings upon the Prophet ﷺ (Allah bless
+        him and give him peace), extinction of self in the love of Allah and His messenger. He was told by the Prophet ﷺ (Allah bless him
+        and give him peace) in a dream, ”I am the splendor of the prophetic messengers, and you are the splendor of the awliya.“
+    </string>
 </resources>

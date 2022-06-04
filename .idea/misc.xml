@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/CodingGarden/DalailAlKhayrat/app/src/main/res/layout-w600dp/app_bar_main.xml" value="0.1728395061728395" />
+        <entry key="..\:/CodingGarden/DalailAlKhayrat/app/src/main/res/layout-w600dp/fragment_introduction.xml" value="0.1728395061728395" />
+        <entry key="..\:/CodingGarden/DalailAlKhayrat/app/src/main/res/layout/fragment_introduction.xml" value="0.17074275362318841" />
         <entry key="..\:/CodingGarden/DalailAlKhayrat/app/src/main/res/menu/navigation_drawer.xml" value="0.1" />
       </map>
     </option>

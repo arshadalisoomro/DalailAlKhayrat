@@ -37,15 +37,7 @@ class IntroductionFragment : Fragment() {
     ): View {
         val introductionViewModel = ViewModelProvider(this)[IntroductionViewModel::class.java]
         _binding = FragmentIntroductionBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val recyclerView = binding.recyclerviewTransform
-        val adapter = TransformAdapter()
-        recyclerView.adapter = adapter
-        introductionViewModel.texts.observe(viewLifecycleOwner) {
-            adapter.submitList(it)
-        }
-        return root
+        return binding.root
     }
 
     override fun onDestroyView() {

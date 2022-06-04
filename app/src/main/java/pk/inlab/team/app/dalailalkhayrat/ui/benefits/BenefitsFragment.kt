@@ -1,4 +1,4 @@
-package pk.inlab.team.app.dalailalkhayrat.ui.reflow
+package pk.inlab.team.app.dalailalkhayrat.ui.benefits
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentReflowBinding
+import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentBenefitsBinding
 
-class ReflowFragment : Fragment() {
+class BenefitsFragment : Fragment() {
 
-    private var _binding: FragmentReflowBinding? = null
+    private var _binding: FragmentBenefitsBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class ReflowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val reflowViewModel =
-            ViewModelProvider(this).get(ReflowViewModel::class.java)
+        val benefitsViewModel =
+            ViewModelProvider(this)[BenefitsViewModel::class.java]
 
-        _binding = FragmentReflowBinding.inflate(inflater, container, false)
+        _binding = FragmentBenefitsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textReflow
-        reflowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textSlideshow
+        benefitsViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

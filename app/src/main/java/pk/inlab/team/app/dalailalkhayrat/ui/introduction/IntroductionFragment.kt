@@ -1,4 +1,4 @@
-package pk.inlab.team.app.dalailalkhayrat.ui.transform
+package pk.inlab.team.app.dalailalkhayrat.ui.introduction
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import pk.inlab.team.app.dalailalkhayrat.R
-import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentTransformBinding
-import pk.inlab.team.app.dalailalkhayrat.databinding.ItemTransformBinding
+import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentIntroductionBinding
+import pk.inlab.team.app.dalailalkhayrat.databinding.ItemIntroductionBinding
 
 /**
  * Fragment that demonstrates a responsive layout pattern where the format of the content
@@ -22,9 +22,9 @@ import pk.inlab.team.app.dalailalkhayrat.databinding.ItemTransformBinding
  * the [RecyclerView] using LinearLayoutManager in a small screen
  * and shows items using GridLayoutManager in a large screen.
  */
-class TransformFragment : Fragment() {
+class IntroductionFragment : Fragment() {
 
-    private var _binding: FragmentTransformBinding? = null
+    private var _binding: FragmentIntroductionBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -35,14 +35,14 @@ class TransformFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val transformViewModel = ViewModelProvider(this).get(TransformViewModel::class.java)
-        _binding = FragmentTransformBinding.inflate(inflater, container, false)
+        val introductionViewModel = ViewModelProvider(this)[IntroductionViewModel::class.java]
+        _binding = FragmentIntroductionBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val recyclerView = binding.recyclerviewTransform
         val adapter = TransformAdapter()
         recyclerView.adapter = adapter
-        transformViewModel.texts.observe(viewLifecycleOwner) {
+        introductionViewModel.texts.observe(viewLifecycleOwner) {
             adapter.submitList(it)
         }
         return root
@@ -83,7 +83,7 @@ class TransformFragment : Fragment() {
         )
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TransformViewHolder {
-            val binding = ItemTransformBinding.inflate(LayoutInflater.from(parent.context))
+            val binding = ItemIntroductionBinding.inflate(LayoutInflater.from(parent.context))
             return TransformViewHolder(binding)
         }
 
@@ -95,7 +95,7 @@ class TransformFragment : Fragment() {
         }
     }
 
-    class TransformViewHolder(binding: ItemTransformBinding) :
+    class TransformViewHolder(binding: ItemIntroductionBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         val imageView: ImageView = binding.imageViewItemTransform

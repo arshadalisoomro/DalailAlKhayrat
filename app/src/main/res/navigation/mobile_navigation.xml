@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_transform">
+    app:startDestination="@+id/nav_introduction">
 
     <fragment
-        android:id="@+id/nav_transform"
-        android:name="pk.inlab.team.app.dalailalkhayrat.ui.transform.TransformFragment"
-        android:label="@string/menu_transform"
-        tools:layout="@layout/fragment_transform" />
+        android:id="@+id/nav_introduction"
+        android:name="pk.inlab.team.app.dalailalkhayrat.ui.introduction.IntroductionFragment"
+        android:label="@string/menu_introduction"
+        tools:layout="@layout/fragment_introduction" />
 
     <fragment
-        android:id="@+id/nav_reflow"
-        android:name="pk.inlab.team.app.dalailalkhayrat.ui.reflow.ReflowFragment"
-        android:label="@string/menu_reflow"
-        tools:layout="@layout/fragment_reflow" />
+        android:id="@+id/nav_read"
+        android:name="pk.inlab.team.app.dalailalkhayrat.ui.read.ReadFragment"
+        android:label="@string/menu_read"
+        tools:layout="@layout/fragment_read" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="pk.inlab.team.app.dalailalkhayrat.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_benefits"
+        android:name="pk.inlab.team.app.dalailalkhayrat.ui.benefits.BenefitsFragment"
+        android:label="@string/menu_benefits"
+        tools:layout="@layout/fragment_benefits" />
 
     <fragment
         android:id="@+id/nav_settings"

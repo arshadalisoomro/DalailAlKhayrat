@@ -1,4 +1,4 @@
-package pk.inlab.team.app.dalailalkhayrat.ui.slideshow
+package pk.inlab.team.app.dalailalkhayrat.ui.read
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentSlideshowBinding
+import pk.inlab.team.app.dalailalkhayrat.databinding.FragmentReadBinding
 
-class SlideshowFragment : Fragment() {
+class ReadFragment : Fragment() {
 
-    private var _binding: FragmentSlideshowBinding? = null
+    private var _binding: FragmentReadBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,14 +22,14 @@ class SlideshowFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
+        val readViewModel =
+            ViewModelProvider(this)[ReadViewModel::class.java]
 
-        _binding = FragmentSlideshowBinding.inflate(inflater, container, false)
+        _binding = FragmentReadBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textSlideshow
-        slideshowViewModel.text.observe(viewLifecycleOwner) {
+        val textView: TextView = binding.textReflow
+        readViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root
